@@ -4,7 +4,7 @@ A GStreamer implementation using python that creates an .ogg file with whatever 
 For GStreamer installation check: https://gstreamer.freedesktop.org/documentation/installing/index.html?gi-language=python
 
 *Project created in Python3 and executed at Ubuntu 20.04*
-**Run both scripts from safe folder**
+**Run both scripts from same folder**
 
 *Usage:*
 1) Execute `Record.py`
@@ -13,4 +13,8 @@ For GStreamer installation check: https://gstreamer.freedesktop.org/documentatio
 4) Execurte `Play.py` file that plays at user output (headsets or speakers) the recorded file
 
 
-IF YOU WANT TO HEAR WHAT'S BEEN RECORDED SIMULTANEOUSLY TRY CHANGING THE PIPELINE ON `Record.py ~ line 21` to `autoaudiosrc ! audioconvert ! tee name="source" ! queue ! vorbisenc ! oggmux ! filesink location=file.ogg source. ! queue ! audioconvert ! pulsesink`
+IF YOU WANT TO HEAR WHAT'S BEEN RECORDED SIMULTANEOUSLY TRY CHANGING THE PIPELINE ON `Record.py ~ line 21` 
+
+to 
+
+`autoaudiosrc ! audioconvert ! tee name="source" ! queue ! vorbisenc ! oggmux ! filesink location=file.ogg source. ! queue ! audioconvert ! pulsesink`
