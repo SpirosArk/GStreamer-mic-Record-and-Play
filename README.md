@@ -11,3 +11,6 @@ For GStreamer installation check: https://gstreamer.freedesktop.org/documentatio
 2) Your microphone input is being recorder at a file named file.ogg at the folder where your .py files are
 3) Press `Ctrl + C` when recording has been completed
 4) Execurte `Play.py` file that plays at user output (headsets or speakers) the recorded file
+
+
+IF YOU WANT TO HEAR WHAT'S BEEN RECORDED SIMULTANEOUSLY TRY CHANGING THE PIPELINE ON `Record.py ~ line 23` to `autoaudiosrc ! audioconvert ! tee name="source" ! queue ! vorbisenc ! oggmux ! filesink location=file.ogg source. ! queue ! audioconvert ! pulsesink`
