@@ -17,4 +17,4 @@ IF YOU WANT TO HEAR WHAT'S BEEN RECORDED SIMULTANEOUSLY TRY CHANGING THE PIPELIN
 
 to 
 
-`autoaudiosrc ! audioconvert ! tee name="source" ! queue ! vorbisenc ! oggmux ! filesink location=file.ogg source. ! queue ! audioconvert ! pulsesink`
+``autoaudiosrc ! audioconvert ! tee name="source" ! queue ! vorbisenc ! oggmux ! filesink location=file.ogg source. ! queue ! audioconvert ! pulsesink``
