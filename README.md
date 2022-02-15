@@ -1,5 +1,5 @@
 # GStreamer-mic-Record-and-Play
-A GStreamer implementation using python that creates an .ogg file with whatever input takes from user's mic and after it is completed it plays it back with the second script
+A GStreamer implementation using python that creates a media file (.ogg) from user's mic. When done recording you can play it back using the Play.py script.
 
 For GStreamer installation check: https://gstreamer.freedesktop.org/documentation/installing/index.html?gi-language=python
 
